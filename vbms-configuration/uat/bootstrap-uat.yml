@@ -1,0 +1,29 @@
+spring:
+  boot:
+    admin:
+      client.url: ${spring.boot.admin.url} #2.X apps
+      url: https://vb-uat-ap107.uat.vbms.aide.oit.va.gov:8100 #1.X apps
+  cloud.config:
+    uri: https://vb-uat-ap108.uat.vbms.aide.oit.va.gov:8098/config-server
+    username: admin
+    password: admin
+    fail-fast: true
+    override-system-properties: false
+    server:
+      bootstrap: true
+      git:
+        uri: https://github.com/department-of-veterans-affairs/vbms-spring-cloud-config.git
+        username: VBMSCIDService
+        password: {GIT_TOKEN}
+        search-paths: '{application}'
+        basedir: /opt/vbms/spring_boot/config-repo
+      accept-empty: false
+encrypt:
+  key: vbmscloudkey
+eureka:
+  instance:
+    secure-port-enabled: true
+  client:
+    enabled: true
+    serviceUrl:
+      defaultZone: https://admin:admin@vb-uat-ap108.uat.vbms.aide.oit.va.gov:8096/discovery-server/eureka/,https://admin:admin@vb-uat-ap109.uat.vbms.aide.oit.va.gov:8096/discovery-server/eureka/

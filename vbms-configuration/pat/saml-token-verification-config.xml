@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<certs>
+    <bepCerts>
+        <serialNumber>3d0000000cdeba</serialNumber>
+        <serialNumber>3D000000005100</serialNumber>
+        <serialNumber>3d000000648c07</serialNumber>
+        <serialNumber>3d000000000471</serialNumber>
+    </bepCerts>
+    <externalConsumerCerts>
+        <!-- Internal Clients -->
+        <mapping>
+            <serialNumber>0x7cf07093b17b3a52d43688f0c64eec54</serialNumber>
+            <userId>vbms-internal</userId>
+        </mapping>
+        <mapping>
+            <serialNumber>0x3d00000000248e</serialNumber>
+            <userId>vbms-internal</userId>
+        </mapping>
+        <mapping>
+            <serialNumber>0x3d00000000248e</serialNumber>
+            <userId>VBMSA</userId>
+        </mapping>
+        <mapping>
+            <serialNumber>0x3d00000000248e</serialNumber>
+            <userId>VBMSR</userId>
+        </mapping>
+        <mapping>
+            <serialNumber>0x3d00000000248e</serialNumber>
+            <userId>VBMSBFI</userId>
+        </mapping>
+        <mapping>
+            <serialNumber>0x3d00000000248e</serialNumber>
+            <userId>VVA</userId>
+        </mapping>
+        <mapping>
+            <serialNumber>0x3d00000000248e</serialNumber>
+            <userId>PACKAGE-MANAGER</userId>
+        </mapping>
+        <mapping>
+            <serialNumber>0xeb3dcbd77253f5ecdfb84dec107c9d6d</serialNumber>
+            <userId>VEFS</userId>
+        </mapping>
+        <mapping>
+            <serialNumber>0x0fb7aa9a7b0aa86833df6d2a45ad2448</serialNumber>
+            <userId>BFFS</userId>
+        </mapping>
+
+        <!-- External Clients -->
+        <!-- None permitted to access PAT -->
+    </externalConsumerCerts>
+</certs>
+
+

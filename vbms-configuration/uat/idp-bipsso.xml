@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  ~ Copyright 2016 Red Hat, Inc. and/or its affiliates
+  ~ and other contributors as indicated by the @author tags.
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~ http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+
+<EntitiesDescriptor Name="urn:keycloak" xmlns="urn:oasis:names:tc:SAML:2.0:metadata"
+					xmlns:dsig="http://www.w3.org/2000/09/xmldsig#">
+	<EntityDescriptor entityID="https://bss-uat.stage.bip.va.gov/auth/realms/idp">
+		<IDPSSODescriptor WantAuthnRequestsSigned="true"
+			protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol">
+                        <KeyDescriptor use="signing">
+                          <dsig:KeyInfo>
+                            <dsig:KeyName>33ibxfjpN6mbgvYJ4FSgcJC801zoneEH-do9ZfzjkDM</dsig:KeyName>
+                            <dsig:X509Data>
+                              <dsig:X509Certificate>MIIFPTCCBCWgAwIBAgIHPQAAAABRAzANBgkqhkiG9w0BAQsFADBHMRMwEQYKCZImiZPyLGQBGRYDZ292MRIwEAYKCZImiZPyLGQBGRYCdmExHDAaBgNVBAMTE1ZBLUludGVybmFsLVMyLUlDQTQwHhcNMjIwMTI4MTQ1NjM1WhcNMjMwMjIxMTQ1NjM1WjCBijELMAkGA1UEBhMCVVMxEjAQBgoJkiaJk/IsZAEZFgJ2YTETMBEGCgmSJomT8ixkARkWA2dvdjENMAsGA1UECBMERC5DLjETMBEGA1UEBxMKV2FzaGluZ3RvbjELMAkGA1UEChMCVkExITAfBgNVBAMTGGJzcy11YXQuc3RhZ2UuYmlwLnZhLmdvdjCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAMGUNMj5hrWOXmRLFQctVnkNyw26WkVYJgqjr2J8boH0z5kvf/uad6Y+IzC4lxJuyTRtn/kh9kxWRFLTGHLjqaMCkU09emCyXw4swwRyVePsas4MoA0dzmaNBwLwfPMW6AhWscyyEStnmUmwp0g5a69EXt4evRwSAnN9UECbv6pLAnkKZesaafqCVRY5zxhe65tG2WdBPWQEa6i/jp6iTiwQCLSOSbhzjkD+NpoWTkHz8lPWD0M721Eoyymet2ovclFtXCx0rFIY/3OjqKsgzJ5+PGnp2vxnouCSrYMJrxmzpwvBinX1bxZE0P7akJU6n2bY0z12c+7yUxdu01WbpeECAwEAAaOCAegwggHkMD4GA1UdEQQ3MDWCGGJzcy11YXQuc3RhZ2UuYmlwLnZhLmdvdoIZYnNzLXVhdC5zdGFnZTguYmlwLnZhLmdvdjAdBgNVHQ4EFgQU9GfyUZZrBKvsUmhHKcZma8I4JmYwHwYDVR0jBBgwFoAUaLdyiZ5C6uRRRR9YogonD3NgQKMwRgYDVR0fBD8wPTA7oDmgN4Y1aHR0cDovL2NybC5wa2kudmEuZ292L3BraS9jcmwvVkEtSW50ZXJuYWwtUzItSUNBNC5jcmwweAYIKwYBBQUHAQEEbDBqMEQGCCsGAQUFBzAChjhodHRwOi8vYWlhLnBraS52YS5nb3YvcGtpL2FpYS92YS9WQS1JbnRlcm5hbC1TMi1JQ0E0LmNlcjAiBggrBgEFBQcwAYYWaHR0cDovL29jc3AucGtpLnZhLmdvdjAMBgNVHRMBAf8EAjAAMAsGA1UdDwQEAwIE8DA9BgkrBgEEAYI3FQcEMDAuBiYrBgEEAYI3FQiByMMzgfnwBoGlnw2E4IEIhcKqSwaC2ssRgdHwVgIBZAIBKzAdBgNVHSUEFjAUBggrBgEFBQcDAgYIKwYBBQUHAwEwJwYJKwYBBAGCNxUKBBowGDAKBggrBgEFBQcDAjAKBggrBgEFBQcDATANBgkqhkiG9w0BAQsFAAOCAQEAMoPwyFEQlpRaNVjpRZrJJ4StzH7Pf0zSBoansPvkgxQVfWS9KXNcD3Tg7DoitWE4PtUHaT7ucadp394RwdYdPZ+4wHjggtN1by8glMETDp5TSWRGeQr/+Sq8+oU6jREiIfrjtAQaet5PonfeUAyXB6s4vy8XJP/iwAshKGGqAYP64ndLcvo4sB6WrAe/8NNx7KGoTAGcRmjMaOH+oIRepPOahz3aZysjk4etBFNhC5KpdDjf/B98sdrWpz/5Rd8cZjqYUk7Bp6sFCX/SeO/kyWrRAlSKkOp4ch78qXbeyoSXWXshrZ4QQBUX4ITsVmyvDzfE/Zg5Nn620WHBY1gA1Q==</dsig:X509Certificate>
+                            </dsig:X509Data>
+                          </dsig:KeyInfo>
+                        </KeyDescriptor>
+                        <KeyDescriptor use="signing">
+                          <dsig:KeyInfo>
+                            <dsig:KeyName>yMe_0S_Vs0lxfwD3T0iXs-ant3fwbcmUg2pQiuGG6Qw</dsig:KeyName>
+                            <dsig:X509Data>
+                              <dsig:X509Certificate>MIIFFjCCA/6gAwIBAgIHPQAAAAAEczANBgkqhkiG9w0BAQsFADBIMRMwEQYKCZImiZPyLGQBGRYDZ292MRIwEAYKCZImiZPyLGQBGRYCdmExHTAbBgNVBAMTFFZBLUludGVybmFsLVMyLUlDQTExMB4XDTIyMTIxOTE5NTIxOFoXDTI0MDExMjE5NTIxOFowYTELMAkGA1UEBhMCVVMxDTALBgNVBAgTBEQuQy4xEzARBgNVBAcTCldhc2hpbmd0b24xCzAJBgNVBAoTAlZBMSEwHwYDVQQDExhic3MtdWF0LnN0YWdlLmJpcC52YS5nb3YwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQDS7HK4piVwYrvO74pJtCIvQOuDl2PE5YhGDRvmSZt3d2i02cPoz6wUMexnpTY41lktyvFlYN9WWTK6VKVjglCf21QQE2UAvAptxKbOnzZqrJSfOzbJ4rxy2ZTlRafNP6FfyT+0NrxodvRlQHy59SHF6gdgstIAXCIFQ4eGCiSPbOFNXZHzdHF9lGlql+otf8MJaVJleN3AHqDnBopEi+C8AWC2YgvY4rErYa0eU8a/IWIX/ncwPjbjGnCMvPGXJizN/UrNWD6EJAfMmLMV+nLbnXjNWUNkcDwGLRszaX+7fsxFJ9lExFP7ny4TQ5PZt2TEhoFiuu/zoXtP4qe1v231AgMBAAGjggHqMIIB5jA+BgNVHREENzA1ghhic3MtdWF0LnN0YWdlLmJpcC52YS5nb3aCGWJzcy11YXQuc3RhZ2U4LmJpcC52YS5nb3YwHQYDVR0OBBYEFEyoDfZG35TLZxVCHvnZt1tekK9fMB8GA1UdIwQYMBaAFCJYiBkpF4GWnffJqBgsdSp8FCypMEcGA1UdHwRAMD4wPKA6oDiGNmh0dHA6Ly9jcmwucGtpLnZhLmdvdi9wa2kvY3JsL1ZBLUludGVybmFsLVMyLUlDQTExLmNybDB5BggrBgEFBQcBAQRtMGswRQYIKwYBBQUHMAKGOWh0dHA6Ly9haWEucGtpLnZhLmdvdi9wa2kvYWlhL3ZhL1ZBLUludGVybmFsLVMyLUlDQTExLmNlcjAiBggrBgEFBQcwAYYWaHR0cDovL29jc3AucGtpLnZhLmdvdjAMBgNVHRMBAf8EAjAAMAsGA1UdDwQEAwIE8DA9BgkrBgEEAYI3FQcEMDAuBiYrBgEEAYI3FQiByMMzgfnwBoGlnw2E4IEIhcKqSwaFlI4BgqKIPwIBZAIBLTAdBgNVHSUEFjAUBggrBgEFBQcDAQYIKwYBBQUHAwIwJwYJKwYBBAGCNxUKBBowGDAKBggrBgEFBQcDATAKBggrBgEFBQcDAjANBgkqhkiG9w0BAQsFAAOCAQEAj1Du8IyFFP0pog2spCeAJ4fzT70I2RQvfX4mZMaKJTEWrSzl3jB7s+kEmWw+QtpPLlvFcE7lcK18YSSyLLAlvrM4NVn9eUJCy8xzmJ0gz2anb9+QjaVZxMI5jCsCkoLureB4DYf97+tYqy/jLOUpm6xcEjUxBmlwIJzDtMhOOiMltdVvcUqIKLIUifRs7wHtxnEhuslzlWzqVX3ZP60KWiLe9p2MzSTnIx/1tWROMMWg6kp0Yjhxrf5aRtgxIfB00Q95rqnYBKTqVVYzMv9ZI/AWIEa7vmeKNrEKGRUf6ojRYGmyHl1WqvSgopIkZIWfRXE/eqJWpEZNoW2IUmr8Ag==</dsig:X509Certificate>
+                            </dsig:X509Data>
+                          </dsig:KeyInfo>
+                        </KeyDescriptor>
+
+			<SingleLogoutService
+					Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST"
+					Location="https://bss-uat.stage.bip.va.gov/auth/realms/idp/protocol/saml" />
+			<SingleLogoutService
+					Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect"
+					Location="https://bss-uat.stage.bip.va.gov/auth/realms/idp/protocol/saml" />
+			<NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:persistent</NameIDFormat>
+			<NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:transient</NameIDFormat>
+			<NameIDFormat>urn:oasis:names:tc:SAML:1.1:nameid-format:unspecified</NameIDFormat>
+			<NameIDFormat>urn:oasis:names:tc:SAML:1.1:nameid-format:emailAddress</NameIDFormat>
+			<SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST"
+				Location="https://bss-uat.stage.bip.va.gov/auth/realms/idp/protocol/saml" />
+			<SingleSignOnService
+				Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect"
+				Location="https://bss-uat.stage.bip.va.gov/auth/realms/idp/protocol/saml" />
+			<SingleSignOnService
+				Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP"
+				Location="https://bss-uat.stage.bip.va.gov/auth/realms/idp/protocol/saml" />
+		</IDPSSODescriptor>
+	</EntityDescriptor>
+</EntitiesDescriptor>

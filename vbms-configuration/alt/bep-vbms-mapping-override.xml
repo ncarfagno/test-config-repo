@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?> 
+<certs>
+    <!-- Internal Clients -->
+    <mapping>
+        <samlTokenUserId>vbms-internal</samlTokenUserId>
+        <cssUserId>VBMSSYSACCT</cssUserId>
+        <cssStationId>283</cssStationId>
+        <cssSecurityLevel>9</cssSecurityLevel>
+    </mapping>
+</certs>

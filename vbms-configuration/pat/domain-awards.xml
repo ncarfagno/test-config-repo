@@ -1,0 +1,122 @@
+<domain>
+
+  <name>vbms-awards</name>
+  <systemuser>vbms.wl</systemuser>
+  <configuration>pat</configuration>
+  <autodeploy>true</autodeploy>
+  <autodomain>true</autodomain>
+  <liquibase>true</liquibase>
+  <liquibase_baseline>true</liquibase_baseline>
+  <weblogic_version>12.2.1.3</weblogic_version>
+
+  <adminserver>
+    <name>AdminServer</name>
+    <hostname>vba-pat-ap101.pat.vbms.aide.oit.va.gov</hostname>
+    <port>7001</port>
+    <sslport>7002</sslport>
+    <username>weblogic</username>
+    <password>{WL_TOKEN}</password>
+  </adminserver>
+
+  <machines>
+    <machine>
+      <hostname>vba-pat-ap101.pat.vbms.aide.oit.va.gov</hostname>
+    </machine>
+    <machine>
+      <hostname>vba-pat-ap102.pat.vbms.aide.oit.va.gov</hostname>
+    </machine>
+  </machines>
+
+  <clusters>
+    <cluster>
+      <name>awards-cluster</name>
+      <jvmargs>-Xms768m -Xmx768m -XX:+UseConcMarkSweepGC -XX:+UseParNewGC -XX:+CMSParallelRemarkEnabled -XX:+UseCMSCompactAtFullCollection -XX:CMSFullGCsBeforeCompaction=1 -XX:MaxPermSize=512m -XX:SurvivorRatio=5 -Dweblogic.ProductionModeEnabled=false -Djava.awt.headless=true -Dfile.encoding=UTF8 -Dweblogic.log.Log4jLoggingEnabled=true -Dawards.jms.consumer.fallback=true -Djava.security.egd=file:/dev/./urandom -Dlog4j.debug -Dweblogic.security.SSL.minimumProtocolVersion=TLSv1.2</jvmargs>
+      <customkeystore>
+        <name>/opt/vbms/config/keystore/pat.vbms.aide.oit.va.gov.jks</name>
+        <pass>vbmskey</pass>
+        <privatekeyalias>pat.vbms.aide.oit.va.gov</privatekeyalias>
+        <privatekeypass>vbmskey</privatekeypass>
+      </customkeystore>
+    </cluster>
+  </clusters>
+
+  <managedservers>
+    <managedserver>
+      <name>awards-ap101</name>
+      <cluster>awards-cluster</cluster>
+      <hostname>vba-pat-ap101.pat.vbms.aide.oit.va.gov</hostname>
+      <port>8001</port>
+      <sslport>8002</sslport>
+    </managedserver>
+    <managedserver>
+      <name>awards-ap102</name>
+      <cluster>awards-cluster</cluster>
+      <hostname>vba-pat-ap102.pat.vbms.aide.oit.va.gov</hostname>
+      <port>8001</port>
+      <sslport>8002</sslport>
+    </managedserver>
+  </managedservers>
+
+  <database>
+    <liquibase>
+      <ojdbcdriver>oracle.jdbc.OracleDriver</ojdbcdriver>
+      <ojdbcdriverpath>/opt/vbms/weblogic/oracle_common/modules/oracle.jdbc/ojdbc8.jar</ojdbcdriverpath>
+      <user>liquibase_admin</user>
+      <pass>S5X$229zHo16_MzpQ</pass>
+    </liquibase>
+    <schemas>
+      <schema>
+        <user>awrd_app</user>
+        <pass>7_989UuoL_9i27_O_L</pass>
+        <url>jdbc:oracle:thin:@vb-pat-db-scan.pat.vbms.aide.oit.va.gov:1521/p1fnet.pat.vbms.aide.oit.va.gov</url>
+      </schema>
+      <schema>
+        <user>vbms_term</user>
+        <pass>e8epkM_YxTc#7BNnm</pass>
+        <url>jdbc:oracle:thin:@vb-pat-db-scan.pat.vbms.aide.oit.va.gov:1521/p1fnet.pat.vbms.aide.oit.va.gov</url>
+      </schema>
+    </schemas>
+    <datasources>
+      <datasource>
+        <name>ADB-OLTP</name>
+        <user>awrd_user</user>
+        <pass>7_989UuoL_9i27_O_L</pass>
+        <jndi>awrd.jdbc.DataSource.OLTP</jndi>
+        <url>jdbc:oracle:thin:@vb-pat-db-scan.pat.vbms.aide.oit.va.gov:1521/p1fnet.pat.vbms.aide.oit.va.gov</url>
+        <target>awards-cluster</target>
+        <driver>oracle.jdbc.OracleDriver</driver>
+        <globaltxprotocol>None</globaltxprotocol>
+        <usexadatasourceinterface>false</usexadatasourceinterface>
+        <initialcapacity>5</initialcapacity>
+        <maxcapacity>50</maxcapacity>
+        <capacityincrement>5</capacityincrement>
+      </datasource>
+      <datasource>
+        <name>ADB-PSTORE</name>
+        <user>awrd_user</user>
+        <pass>7_989UuoL_9i27_O_L</pass>
+        <jndi>awrd.jdbc.DataSource.PSTORE</jndi>
+        <url>jdbc:oracle:thin:@vb-pat-db-scan.pat.vbms.aide.oit.va.gov:1521/p1fnet.pat.vbms.aide.oit.va.gov</url>
+        <target>awards-cluster</target>
+        <driver>oracle.jdbc.OracleDriver</driver>
+        <globaltxprotocol>None</globaltxprotocol>
+        <usexadatasourceinterface>false</usexadatasourceinterface>
+        <initialcapacity>5</initialcapacity>
+        <maxcapacity>50</maxcapacity>
+        <capacityincrement>5</capacityincrement>
+      </datasource>
+    </datasources>
+  </database>
+
+  <deployments>
+    <deployment>
+      <artifact>awards-help.war</artifact>
+      <target>awards-cluster</target>
+    </deployment>
+    <deployment>
+      <artifact>awards.ear</artifact>
+      <target>awards-cluster</target>
+    </deployment>
+  </deployments>
+
+</domain>

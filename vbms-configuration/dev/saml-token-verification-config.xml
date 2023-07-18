@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<certs>
+    <bepCerts>
+        <serialNumber>3d0000000c57b7</serialNumber>
+        <serialNumber>3d0000000050d5</serialNumber>
+        <serialNumber>3d0000000050cd</serialNumber>
+        <serialNumber>3d000000000489</serialNumber>
+    </bepCerts>
+    <externalConsumerCerts>
+        <!-- Internal Clients -->
+        <mapping>
+            <serialNumber>0x7cf07093b17b3a52d43688f0c64eec54</serialNumber>
+            <userId>vbms-internal</userId>
+        </mapping>
+        <mapping>
+            <serialNumber>0x3d00000000248a</serialNumber>
+            <userId>vbms-internal</userId>
+        </mapping>
+        <mapping>
+            <serialNumber>0x3d00000000248a</serialNumber>
+            <userId>VBMSA</userId>
+        </mapping>
+        <mapping>
+            <serialNumber>0x3d00000000248a</serialNumber>
+            <userId>VBMSR</userId>
+        </mapping>
+        <mapping>
+            <serialNumber>0x3d00000000248a</serialNumber>
+            <userId>VBMSBFI</userId>
+        </mapping>
+        <mapping>
+            <serialNumber>0x3d00000000248a</serialNumber>
+            <userId>VVA</userId>
+        </mapping>
+        <mapping>
+            <serialNumber>0x3d00000000248a</serialNumber>
+            <userId>PACKAGE-MANAGER</userId>
+        </mapping>
+        <mapping>
+            <serialNumber>0xeb3dcbd77253f5ecdfb84dec107c9d6d</serialNumber>
+            <userId>VEFS</userId>
+        </mapping>
+        <mapping>
+            <serialNumber>0xb849151e40424b3afc82c58cf619d8b4</serialNumber>
+            <userId>Pension-Automation</userId>
+        </mapping>
+        <mapping>
+            <serialNumber>0x0fb7aa9a7b0aa86833df6d2a45ad2448</serialNumber>
+            <userId>BFFS</userId>
+        </mapping>
+        <mapping>
+            <serialNumber>0x1f6e083fcafc39e240261d24bc2bc02a</serialNumber>
+            <userId>PATAT</userId>
+        </mapping>
+        <mapping>
+            <serialNumber>0x9a2f842173560091406cd4cee3cedf0a</serialNumber>
+            <userId>eMPWR-VA</userId>
+        </mapping>
+        <!-- Special Test Cases -->
+        <mapping>
+            <serialNumber>0x7cf07093b17b3a52d43688f0c64eec54</serialNumber>
+            <userId>DAS</userId>
+        </mapping>
+    </externalConsumerCerts>
+</certs>

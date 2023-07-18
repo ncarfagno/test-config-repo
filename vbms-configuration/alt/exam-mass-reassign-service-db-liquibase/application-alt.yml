@@ -1,0 +1,14 @@
+database:
+  connection:
+    url: jdbc:oracle:thin:@vb-alt-db101.alt.vbms.aide.oit.va.gov:1521:t1fnet
+datasource:
+  master:
+    username: liquibase_admin
+    password: xzY<g05882$oHN!9z
+    url: ${database.connection.url}
+  main:
+    password: S_875X77M_8ag3_F_M
+    url: ${database.connection.url}
+  audit:
+    password: A_349S4e0_rbH6_5_4
+    url: ${database.connection.url}

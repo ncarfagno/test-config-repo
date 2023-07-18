@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<certs>
+    <bepCerts>
+        <serialNumber>3d0000000cb5d0</serialNumber>
+        <serialNumber>3D0000000050FF</serialNumber>
+        <serialNumber>3d0000006488f8</serialNumber>
+        <serialNumber>3D000000000470</serialNumber>
+    </bepCerts>
+    <externalConsumerCerts>
+        <!-- Internal Clients -->
+        <mapping>
+            <serialNumber>0x7cf07093b17b3a52d43688f0c64eec54</serialNumber>
+            <userId>vbms-internal</userId>
+        </mapping>
+        <mapping>
+            <serialNumber>0x3d00000000248f</serialNumber>
+            <userId>vbms-internal</userId>
+        </mapping>
+        <mapping>
+            <serialNumber>0x3d00000000248f</serialNumber>
+            <userId>VBMSA</userId>
+        </mapping>
+        <mapping>
+            <serialNumber>0x3d00000000248f</serialNumber>
+            <userId>VBMSR</userId>
+        </mapping>
+        <mapping>
+            <serialNumber>0x3d00000000248f</serialNumber>
+            <userId>VBMSBFI</userId>
+        </mapping>
+        <mapping>
+            <serialNumber>0x3d00000000248f</serialNumber>
+            <userId>VVA</userId>
+        </mapping>
+        <mapping>
+            <serialNumber>0x3d00000000248f</serialNumber>
+            <userId>PACKAGE-MANAGER</userId>
+        </mapping>
+        <mapping>
+            <serialNumber>0xeb3dcbd77253f5ecdfb84dec107c9d6d</serialNumber>
+            <userId>VEFS</userId>
+        </mapping>
+        <mapping>
+            <serialNumber>0x0fb7aa9a7b0aa86833df6d2a45ad2448</serialNumber>
+            <userId>BFFS</userId>
+        </mapping>
+
+        <!-- External Clients -->
+        <mapping>
+            <serialNumber>0x7586f8d963e07adf797b3a70d0d1e656</serialNumber>
+            <userId>DAS</userId>
+        </mapping>
+        <mapping>
+            <serialNumber>0x9a2f842173560091406cd4cee3cedf0a</serialNumber>
+            <userId>eMPWR-VA</userId>
+        </mapping>
+    </externalConsumerCerts>
+</certs>
+

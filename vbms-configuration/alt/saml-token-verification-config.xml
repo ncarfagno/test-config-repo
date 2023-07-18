@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<certs>
+    <bepCerts>
+        <serialNumber>3d0000000c57b7</serialNumber>
+        <serialNumber>3d000000648844</serialNumber>
+    </bepCerts>
+    <externalConsumerCerts>
+        <!-- Internal Clients -->
+        <mapping>
+            <serialNumber>0x7cf07093b17b3a52d43688f0c64eec54</serialNumber>
+            <userId>vbms-internal</userId>
+        </mapping>
+    </externalConsumerCerts>
+</certs>

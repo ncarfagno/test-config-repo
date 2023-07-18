@@ -1,0 +1,19 @@
+<EntitiesDescriptor ID="SMa8a8f7ac97208907482e2b83d10c40a85313c2bff3" xmlns="urn:oasis:names:tc:SAML:2.0:metadata">
+    <EntityDescriptor ID="SMf72bb524051e3dd61b9455d0b733f9f3cf75aad0a" entityID="http://linktest.idp.bep.vba.va.gov/sso">
+        <IDPSSODescriptor WantAuthnRequestsSigned="false" ID="SM3e9df62485806c91e6aca12e591a4e3345d3e0756f" protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol">
+            <KeyDescriptor use="signing">
+                <ns1:KeyInfo Id="SM151e2feeea4e30618d914a43e572ae50faebeaeb41" xmlns:ns1="http://www.w3.org/2000/09/xmldsig#">
+                    <ns1:X509Data>
+                        <ns1:X509IssuerSerial>
+                            <ns1:X509IssuerName>CN=VA-Internal-S2-ICA1-v1,dc=va,dc=gov</ns1:X509IssuerName>
+                            <ns1:X509SerialNumber>17169973580193466</ns1:X509SerialNumber>
+                        </ns1:X509IssuerSerial>
+                        <ns1:X509Certificate>MIIFSzCCBDOgAwIBAgIHPQAAAAzeujANBgkqhkiG9w0BAQsFADBKMRMwEQYKCZImiZPyLGQBGRYDZ292MRIwEAYKCZImiZPyLGQBGRYCdmExHzAdBgNVBAMTFlZBLUludGVybmFsLVMyLUlDQTEtdjEwHhcNMTgwMTA0MTg1MzEwWhcNMjEwMTAzMTg1MzEwWjCBvjELMAkGA1UEBhMCVVMxDjAMBgNVBAgTBVRleGFzMQ8wDQYDVQQHEwZBdXN0aW4xJzAlBgNVBAoTHkRlcGFydG1lbnQgb2YgVmV0ZXJhbnMgQWZmYWlyczEpMCcGA1UECxMgVmV0ZXJhbnMgQmVuZWZpdHMgQWRtaW5pc3RyYXRpb24xGzAZBgNVBAMTEmJlcGNlcnQudmJhLnZhLmdvdjEdMBsGCSqGSIb3DQEJARYOQ1JQV0xETEB2YS5nb3YwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQCnsZiVHAQrEk8Vw8IZfXDPHzhkFbbPfUyCt4jIHYpEeGauaKrqUo4XWQjQx1tRVypdsVdAFjtwEgq2+tNCfi+UKgnu9/OibAFrSs7MT9ZnxMEkO+PgcviFB6VCXiZEJgP77ELLTPCQD5/QvnjU8SvMiL7veF/DjkYMbyowPOCAJ5F6SRcs6Ayt11dWFRVe6HFFAu4dhIq57WDha79VWsg8fioiffaCY8oR5I5sn9qsrRJ311Ya2lkKCOzfnXTE8vvBWqdbWTeSGOucBaoXSVTMeFMwCBwSXCHnshZTMUhsQzAJzosOJYTpfjf5RlpAtWaX82EsaNe3/c/aEmfb5w6PAgMBAAGjggG/MIIBuzALBgNVHQ8EBAMCBaAwHQYDVR0RBBYwFIISYmVwY2VydC52YmEudmEuZ292MB0GA1UdDgQWBBRtnmtSZ/JqmyQhzODhzXIwEyosCzAfBgNVHSMEGDAWgBQbbd/rPeXiDe8WsdDeX1gaVsvk7DBJBgNVHR8EQjBAMD6gPKA6hjhodHRwOi8vY3JsLnBraS52YS5nb3YvcGtpL2NybC9WQS1JbnRlcm5hbC1TMi1JQ0ExLXYxLmNybDB7BggrBgEFBQcBAQRvMG0wRwYIKwYBBQUHMAKGO2h0dHA6Ly9haWEucGtpLnZhLmdvdi9wa2kvYWlhL3ZhL1ZBLUludGVybmFsLVMyLUlDQTEtdjEuY2VyMCIGCCsGAQUFBzABhhZodHRwOi8vb2NzcC5wa2kudmEuZ292MD0GCSsGAQQBgjcVBwQwMC4GJisGAQQBgjcVCIHIwzOB+fAGgaWfDYTggQiFwqpLBoOCn2CB4ItSAgFkAgEVMB0GA1UdJQQWMBQGCCsGAQUFBwMCBggrBgEFBQcDATAnBgkrBgEEAYI3FQoEGjAYMAoGCCsGAQUFBwMCMAoGCCsGAQUFBwMBMA0GCSqGSIb3DQEBCwUAA4IBAQAk8SNkk+5V0mob1NDOnbQYjpwZnzCj1OKRcZDS52e5SL6B3eRvFwbw0QGdSFVlbOU3saXJRPiZ8tLVIxmF98oeRZ509wVsfOyvApemnQIBXpoxcpTeKd6tdnUOqDBHJOF+p1HtETfd0Drpy9LqmR/zkLKNPgYi9MKDp8vzZapXEbic1PFalwbF1B9xwAmWqK3vQHxivG4yMx4jaifoJCMBW77kH5YNuq4vY7xn/9v80uWIfZoxan9HX5J6ojWDb8azMLHlH5JWjY2lXxKp5bTyLCYJTiii8AL9decT3//7djO1wANm1+l4mA8sg2DpmqfkZua+f34SeC/o5OK8Mx3b</ns1:X509Certificate>
+                        <ns1:X509SubjectName>E=CRPWLDL@va.gov,CN=bepcert.vba.va.gov,OU=Veterans Benefits Administration,O=Department of Veterans Affairs,L=Austin,ST=Texas,C=US</ns1:X509SubjectName>
+                    </ns1:X509Data>
+                </ns1:KeyInfo>
+            </KeyDescriptor>
+            <SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="http://beplinktest.vba.va.gov/affwebservices/public/saml2sso"/>
+        </IDPSSODescriptor>
+    </EntityDescriptor>
+</EntitiesDescriptor>

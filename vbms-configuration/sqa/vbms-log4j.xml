@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE log4j:configuration SYSTEM "log4j.dtd">
+
+<log4j:configuration xmlns:log4j="http://jakarta.apache.org/log4j/">
+    <!-- Appenders -->
+    <appender name="console" class="org.apache.log4j.ConsoleAppender">
+        <param name="Target" value="System.out" />
+        <layout class="org.apache.log4j.PatternLayout">
+            <param name="ConversionPattern" value="[%d] %-5p: [%t] %c - %m%n" />
+        </layout>
+    </appender>
+    
+    <appender name="auditFileAppender" class="org.apache.log4j.DailyRollingFileAppender">
+        <param name="append" value="true" />
+        <param name="encoding" value="UTF-8" />
+        <param name="file" value="/opt/vbms/logs/audit.log" />
+        <param name="DatePattern" value="'.'yyyy-MM-dd" />
+        <layout class="org.apache.log4j.PatternLayout">
+                <param name="ConversionPattern" value="%m\n" />
+        </layout>
+    </appender>
+
+    <!--                     -->
+    <!-- Application Loggers -->
+    <!--                     -->
+    <logger name="gov.va.vba.vbms">
+        <level value="info" />
+    </logger>
+
+    <!--
+        Change level to "debug" to log statements from CMS, Claims Services, and VBMS-C web service handlers. (Includes
+        logging of incoming and outgoing SOAP message headers - not content.)
+
+        Change level to "trace" to log the full incoming and outgoing SOAP messages for CMS, Claims, and VBMS-C.
+    -->
+    <logger name="gov.va.vba.vbms.ws.handlers">
+        <level value="trace" />
+    </logger>
+
+    <!-- Change level to "debug" to see all BGS/VetsNet incoming and outgoing SOAP messages. -->
+    <logger name="gov.va.vba.vbms.common.services.util.MessageLoggingHandler">
+        <level value="debug" />
+    </logger>
+
+    <!-- Leave this setting to turn off PDP noise. -->
+    <logger name="gov.va.vba.vbms.security.authz.pdp">
+        <level value="warn" />
+    </logger>
+
+    <!-- Change to level higher than warn to turn off runtime authorize annotation check messages -->
+    <logger name="gov.va.vba.vbms.security.client.pep">
+        <level value="warn" />
+    </logger>
+
+    <!-- Audit file configuration. -->
+    <category name="audit" additivity="false">
+        <appender-ref ref="auditFileAppender"/>
+    </category>
+
+    <!--                  -->
+    <!-- 3rd party Loggers -->
+    <!--                  -->
+    <!-- Leave this setting to turn off com package noise. -->
+    <logger name="com">
+        <level value="warn" />
+    </logger>
+
+    <!-- Leave this setting to turn off net package noise. -->
+    <logger name="net">
+        <level value="warn" />
+    </logger>
+
+    <!-- Leave this setting to turn off org package noise. -->
+    <logger name="org">
+        <level value="error" />
+    </logger>
+
+    <!-- Keep this logger at debug in order to see SAML verification reasons. -->
+    <logger name="org.springframework.security.saml.websso">
+        <level value="info" />
+    </logger>
+    <logger name="org.springframework.security.saml.websso.WebSSOProfileConsumerImpl">
+        <level value="info" />
+    </logger>
+
+    <!--             -->
+    <!-- Root Logger -->
+    <!--             -->
+    <root>
+        <priority value="info" />
+        <appender-ref ref="console" />
+    </root>
+</log4j:configuration>
